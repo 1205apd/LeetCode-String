@@ -1,0 +1,13 @@
+class Solution:
+    def secondHighest(self, s: str) -> int:
+        res=0
+        lis=[]
+        for i in s:
+            if i.isdigit() and i not in lis:
+                lis.append(i)
+        lis.sort(reverse=True)
+        
+        if(len(lis)>1):
+            return lis[1]
+        else:
+            return -1
