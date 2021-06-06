@@ -1,0 +1,8 @@
+class Solution:
+    def truncateSentence(self, s: str, k: int) -> str:
+        s=s.split()
+        s=s[:k]   
+        s=' '.join(map(str,s))
+        return s
+            
+        
